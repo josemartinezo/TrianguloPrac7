@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Cateto a"
+        android:ems="10"
+        android:id="@+id/inputCat1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Cateto b"
+        android:ems="10"
+        android:id="@+id/inputCat2"
+        android:layout_below="@+id/inputCat1"
+        android:layout_alignLeft="@id/inputCat1"
+        android:layout_alignStart="@id/inputCat1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:id="@+id/btnSumbit"
+        android:layout_below="@id/inputCat1"
+        android:layout_toRightOf="@id/inputCat2"
+        android:layout_toEndOf="@id/inputCat2"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator"
+        android:layout_below="@+id/btnSumbit"
+        android:layout_alignStart="@+id/inputCat2"
+        android:layout_alignEnd="@+id/btnSumbit"
+        android:layout_alignLeft="@+id/inputCat2"
+        android:layout_alignRight="@+id/btnSumbit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Resu"
+        android:layout_below="@+id/separator"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Resu1"
+        android:layout_below="@+id/Resu"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Resu2"
+        android:layout_below="@+id/Resu1"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>
